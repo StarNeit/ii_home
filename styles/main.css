@@ -258,16 +258,9 @@ body{
 }
 
 .home_page__header{
-    background: #6170FF;
+    background: url('../images/head_back.png') no-repeat;
+    background-size: cover;
     width: 100%;
-    min-height: 738px;
-}
-
-.home_page__header__content{
-    max-width: 1600px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .home_page__content{
@@ -279,110 +272,104 @@ body{
 
     padding-left: 30px;
     padding-right: 30px;
-}
+    padding-bottom: 69px;
 
-.home_page__header__lgtitle{
-    font-family: 'UniNeueBlack';
-    color: #fff;
-    font-size: 50px;
-    text-align: left;
-    line-height: 50px;
-
-    max-width: 584px;
-    width: 100%;
-    /*margin-left: auto;*/
-
-    padding-top: 214px;
-}
-
-@media (max-width: 992px)
-{
-    .home_page__header__lgtitle{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.home_page__header-left{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.home_page__header__mdtitle{
-    font-family: 'ProximaNovaRegular';
-    color: #fff;
-    font-size: 21px;
-    text-align: left;
-
-    max-width: 584px;
-    width: 100%;
-    /*margin-left: auto;*/
-    margin-top: 20px;
-}
-
-@media (max-width: 992px)
-{
-    .home_page__header__mdtitle{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.home_page__header__mdtitle > span{
-    font-family: 'ProximaNovaBold';
-    color: #F3B93C;
-    font-size: 21px;
-    text-align: left;
-    line-height: 28px;
-    letter-spacing: 0.13px;
-}
-
-.home_page__header__btnstart{
-    background: #38D299;
-    border-radius: 100px;
-    font-family: 'ProximaNovaBold';
-    height: 48px;
-    color: #fff;
-    font-size: 11px;
-    letter-spacing: 2px;
-    line-height: 24px;
-    max-width: 291px;
-    width: 100%;
-    border: 0;
-    outline: none;
-}
-
-
-.home_page__header__btnstart:hover{
-    background-color: #005239;
-}
-
-.home_page__header-mg1{
-    margin-top: 70px;
-}
-
-.home_page__header-right{
     text-align: center;
 }
 
-@media (max-width: 992px) {
-
+.home_page__header-smtitle{
+    font-family: "UniNeueBold";
+    font-size: 18px;
+    color: #2FDAB4;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 80px;
 }
 
-.home_page__image{
-    max-width: 686px;
-    width: calc(100% - 30px);
+.home_page__header-lgtitle{
+    font-family: "UniNeueBold";
+    color: #fff;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+
+    max-width: 580px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 170px;
 }
 
-@media (max-width: 992px) {
-    .home_page__image {
-        margin-top: 50px;
+.hp_search_form{
+    background: rgba(5, 16, 120, 0.34);
+    padding: 52px 70px;
+    margin-top: 42px;
+    display: inline-block;
+
+    max-width: 727px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hp_search_form{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
+.hp_search_form__content{
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65px;
+    display: flex;
+    padding: 3px;
+}
+
+.hp_search_form-input{
+    flex: 1;
+    border: 0;
+    outline: none !important;
+    padding-left: 20px;
+
+    font-family: "ProximaNovaRegular";
+    color: #868686;
+    font-size: 14px;
+}
+
+.hp_search_form-btn{
+    width: 90px;
+    background: #38D299;
+    border: 0;
+    color: #fff;
+    font-family: "ProximaNovaBold";
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 13px;
+    outline: none;
+}
+
+.hp_search_form-btn:hover {
+    background-color: #005239;
+}
+
+.hp_search_comment{
+    font-family: "ProximaNovaRegular";
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    max-width: 710px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+
+/**
+
+ */
 .home_page__logos{
     width: 100%;
     background: #F1F1F3;
@@ -396,334 +383,313 @@ body{
     margin-bottom: 35px;
 }
 
-.home_page__techno{
+
+/**
+
+ */
+.hp_tech{
     background: #F5F5F5;
-    padding-top: 84px;
-    padding-bottom: 112px;
+    margin-top: 6.5px;
+    width: 100%;
 }
 
-.home_page__techno-pd1{
-    margin-left: 80px;
-}
-
-@media (max-width: 992px) {
-    .home_page__techno-pd1{
-        margin-left: 0;
-    }
-}
-
-.home_page__techno__lgtitle{
-    font-family: 'UniNeueBook';
-    color: #6170FF;
-    font-size: 36px;
-    max-width: 720px;
+.hp_tech__content{
+    max-width: 1200px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    padding-top: 96px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 116px;
+}
+
+.hp_tech__lgfont{
+    font-family: "UniNeueBook";
+    color: #6170FF;
+    font-size: 30px;
     text-align: center;
-    margin-bottom: 75px;
-}
+    line-height: 35px;
 
-.home_page__techno__mdtitle{
-    font-family: 'ProximaNovaBold';
-    color: #6170FF;
-    font-size: 14px;
-    letter-spacing: 3px;
-    line-height: 24px;
-    margin-bottom: 16px;
-}
-
-.home_page__techno__smtitle{
-    font-family: 'ProximaNovaLight';
-    color: #414042;
-    font-size: 18px;
-    letter-spacing: 0.12px;
-    line-height: 26px;
-
-    max-width: 403px;
-    width: 100%;
-}
-
-@media (max-width: 992px) {
-    .home_page__techno__smtitle{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.home_page__techno__xstitle{
-    font-family: 'ProximaNovaBold';
-    color: #38D299;
-    font-size: 14px;
-    letter-spacing: 0.09px;
-    line-height: 24px;
-    margin-top: 10px;
-    display: block;
-}
-
-.home_page__techno__mg1{
-    margin-bottom: 37px;
-}
-
-.home_page__techno__mg2{
-    margin-bottom: 59px;
-}
-
-@media (max-width: 992px) {
-    .home_page__techno__mg3{
-        margin-top: 30px;
-    }
-}
-
-.home_page__offering{
-    padding-top: 91px;
-}
-
-.home_page__offering-lgimage{
-    max-width: 663px;
-    width: 100%;
-}
-
-.home_page__offering-smimage{
-    max-width: 161px;
-    width: 100%;
-    margin-top: 65px;
-}
-
-.home_page__offering__lgtitle{
-    font-family: 'UniNeueBook';
-    color: #6170FF;
-    font-size: 36px;
-    max-width: 462px;
-    width: 100%;
-    line-height: 42px;
-    margin-top: 26px;
-}
-
-.home_page__offering__mdtitle{
-    font-family: 'UniNeueBook';
-    color: #414042;
-    font-size: 24px;
-    text-align: left;
-    line-height: 27px;
-
-    max-width: 462px;
-    width: 100%;
-    margin-top: 5px;
-}
-
-.home_page__offering__smtitle{
-    font-family: 'ProximaNovaLight';
-    color: #414042;
-    font-size: 17px;
-    text-align: left;
-    letter-spacing: 0.12px;
-    line-height: 26px;
-    margin-top: 19px;
-    margin-bottom: 62px;
-}
-
-.home_page__sepline{
-    max-width: 913px;
+    max-width: 548px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid #CFCFCF;
-    margin-top: 155px;
-    margin-bottom: 84px;
+}
+
+.hp_tech__item{
+    max-width: 337px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hp_tech__item-logo{
+    background: #fff;
+    width: 156px;
+    height: 156px;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 67px;
+}
+
+.hp_tech__item-lgfont{
+    padding-top: 45px;
+    font-family: "ProximaNovaBold";
+    color: #6170FF;
+    font-size: 16px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.hp_tech__item-mdfont{
+    font-family: "ProximaNovaBold";
+    color: #414042;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.12px;
+    line-height: 18px;
+}
+
+.hp_tech__item-smfont{
+    font-family: "ProximaNovaLight";
+    color: #414042;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.12px;
+    line-height: 18px;
+
+    min-height: 97px;
+}
+
+.hp_tech__item-link{
+    font-family: "ProximaNovaBold";
+    color: #2FDAB4;
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 0.08px;
+    line-height: 24px;
+    display: inline-block;
+
+    padding-top: 32px;
+}
+
+
+/**
+
+ */
+.hp_div_price{
+    background: #3A4399;
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-    .home_page__sepline{
-        margin-top: 80px;
-        margin-bottom: 20px;
+    .hp_div_price{
+        display: block;
     }
 }
 
-.home_page__techmoni{
-
+.hp_div_price > div{
+    font-family: "ProximaNovaRegular";
+    color: #B4BBFF;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.16px;
+    line-height: 28px;
 }
 
-.home_page__techmoni-logo{
-    max-width: 138px;
+.hp_div_price > button{
+    background: #38D299;
+    border-radius: 50px;
+    border: 0;
+    color: #FFFFFF;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 36px;
+    margin-left: 20px;
+    font-family: "ProximaNovaBold";
+
+    max-width: 147px;
     width: 100%;
-    margin-top: 70px;
 }
 
-.home_page__techmoni-lgtitle{
-    font-family: 'UniNeueBook';
+@media (max-width: 768px) {
+    .hp_div_price > button{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+}
+
+
+/**
+
+ */
+.hp_data_driven{
+    width: 100%;
+    background: #fff;
+}
+
+.hp_data_driven__content{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 132px;
+    padding-bottom: 132px;
+}
+
+.hp_data_driven-image{
+    width: 100%;
+}
+
+.hp_data_driven-logo{
+    max-width: 161px;
+    width: 100%;
+    margin-top: 52px;
+}
+
+.hp_data_driven-lgfont{
+    font-family: "UniNeueBook";
     color: #6170FF;
     font-size: 36px;
-    line-height: 42px;
-    max-width: 462px;
-    width: 100%;
-    margin-top: 28px;
-}
-
-.home_page__techmoni-mdtitle {
-    font-family: 'UniNeueBook';
-    color: #414042;
-    font-size: 24px;
     text-align: left;
-    line-height: 27px;
+    line-height: 42px;
 
     max-width: 462px;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 26px;
 }
 
-.home_page__techmoni-smtitle{
-    font-family: 'ProximaNovaLight';
+.hp_data_driven-mdfont{
+    font-family: "ProximaNovaLight";
     color: #414042;
-    font-size: 17px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 22px;
     letter-spacing: 0.12px;
-    line-height: 26px;
-    margin-top: 21px;
-    margin-bottom: 67px;
-    max-width: 453px;
+    max-width: 433px;
+    width: 100%;
+    padding-top: 7px;
+}
+
+.hp_data_driven-mdfont > span{
+    font-family: "ProximaNovaSemibold";
+}
+
+.hp_data_driven-desc{
+    display: inline-block;
+    text-align: left;
+}
+
+.hp_data_driven-link{
+    font-family: "ProximaNovaBold";
+    color: #2FDAB4;
+    font-size: 13px;
+    text-align: left;
+    letter-spacing: 0.08px;
+    line-height: 24px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+/**
+
+ */
+.hp_search{
+    background: #3A4399;
     width: 100%;
 }
 
-.home_page__techmoni-lgimg{
-    max-width: 688px;
+.hp_search__content{
     width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    padding-top: 130px;
+    padding-bottom: 91px;
+    text-align: center;
 }
 
-@media (max-width: 992px) {
-    .home_page__techmoni-lgimg {
-        margin-top: 50px;
-    }
-}
-
-.home_page__consult{
-    background: #F5F5F5;
-    padding-top: 98px;
-    padding-bottom: 110px;
-}
-
-.home_page__consult-lgtitle{
-    font-size: 52px;
-    font-family: 'UniNeueBook';
-    color: #6170FF;
+.hp_search-lgfont{
+    font-family: "UniNeueBook";
+    color: #FFFFFF;
+    font-size: 42px;
     text-align: center;
     line-height: 42px;
 }
 
-.home_page__consult-mdtitle{
-    font-family: 'ProximaNovaLight';
-    color: #414042;
-    font-size: 23px;
-    letter-spacing: 0.12px;
+.hp_search-mdfont{
+    font-family: "ProximaNovaLight";
+    color: #B4BBFF;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 0.11px;
     line-height: 32px;
+    padding-top: 34px;
 
     max-width: 869px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 37px;
-
-    text-align: center;
-    margin-bottom: 69px;
 }
 
-.home_page__stay{
-    background: #3A4399;
-    padding-top: 113px;
-    padding-bottom: 139px;
-}
+.hp_search-btn{
+    background: #38D299;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
 
-.home_page__stay-lgtitle{
     color: #fff;
-    font-family: 'ProximaNovaLight';
-    font-size: 28px;
-    text-align: center;
-    line-height: 32px;
-}
-
-.home_page__stay-mdtitle{
-    color: #fff;
-    font-family: 'ProximaNovaRegular';
+    font-family: "ProximaNovaBold";
     font-size: 16px;
     text-align: center;
-    letter-spacing: 0.12px;
+    letter-spacing: 2px;
     line-height: 24px;
 
+    max-width: 167px;
     width: 100%;
-    max-width: 542px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 27.58px;
-}
 
-
-.home_page__techno-rborder{
-    border-left: 1px solid #CFCFCF;
-}
-
-@media (max-width: 992px) {
-    .home_page__techno-rborder{
-        border-left: 0;
-    }
-}
-
-.home_page__stay__email {
-    height: 65px;
-    max-width: 371px;
-    width: 100%;
-
-    margin-left: auto;
-    margin-right: auto;
+    min-height: 48px;
     margin-top: 55px;
-    background-color: #F5F5F5;
-    padding: 8px 10px 7px 20px;
 }
 
-.input_work_email{
-    flex: 1;
-    color: #A7A9AC;	font-family: "ProximaNova";	font-size: 16px;	font-weight: 500;	line-height: 19px;
-
-    border: 0;
-    background-color: #F5F5F5;
+.hp_search-btn:hover{
+    background-color: #005239;
 }
 
-.input_work_email:focus{
-    outline: none;
-}
-
-
-.btn_submit{
-    width: 80px;
-    height: 50px;
-    margin-left: 10px;
-
-    background-color: #6170FF;	box-shadow: inset 0 -2px 0 0 rgba(0,0,0,0.07);
-    border: 0;
-
-    color: #FFFFFF;	font-family: "ProximaNova";	font-size: 11px;	font-weight: bold;	letter-spacing: 2px;	line-height: 13px;	text-align: center;
-}
-
-.btn_submit:focus{
-    outline: none;
-}
-
-.btn_submit:hover{
-    background: #30349c;
-}
-
-.under_label1{
-    color: #fff;
+.hp_search-link{
     text-decoration: underline;
-    cursor: pointer;
+    font-family: "ProximaNovaLight";
+    color: #DBDFFF;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.11px;
+    line-height: 32px;
+    display: inline-block;
 }
 
-@media (max-width: 1300px) {
-
-}
-
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 767px) {
-
+.hp_search-link:hover{
+    color: #2FDAB4;
 }
