@@ -461,7 +461,7 @@ body{
     font-size: 16px;
     text-align: left;
     letter-spacing: 0.12px;
-    line-height: 18px;
+    line-height: 22px;
 
     min-height: 97px;
 }
@@ -476,6 +476,12 @@ body{
     display: inline-block;
 
     padding-top: 32px;
+}
+
+.hp_tech__item-img{
+    width: 11px;
+    margin-left: 8px;
+    margin-top: -2px;
 }
 
 
